@@ -5,10 +5,11 @@ let commentText = document.querySelector("Create New Task")
 let submitButton = document.querySelector("#create-task-form")
 let todos = document.querySelector("#tasks")
 
-commentText.addEventListener("submit",toDoList())
+
 submitButton.addEventListener("click", function(event){
   event.preventDefault()
 })
+submitButton.addEventListener("submit",toDoList())
 
 
 function toDoList(){
